@@ -1,21 +1,28 @@
 import React from 'react'
-import '../loginPage/LoginPage.css'
+import './LoginPage.css'
+import image from 'D:/Telemed-project/telemed-react/src/assets/TelemedAppIcon.png'
+import Topheading from '../../Components/topheading/Topheading'
 
 function LoginPage() {
 
     
   return (
-      <div className='back-container'>
-        <div className='text-container'><h2>Casuceus TeleMed</h2></div>
+    <div>
+
+    
+      <div className='back-container'></div>
+        <Topheading />
 
         <div className='wrapper'>
+        <img src={image}  className='imgsrc'/>
         <div className='subWrapper'>
               <input type="text"  placeholder="Enter email" className='inputmet'/><br />
               <input type="text" placeholder="Password" className='inputmet'/><br />
         </div><br />
 
-         <button  placeholder="Login" className='submit'>Login in</button>
+         <button  placeholder="Login" className='submit'>Login   in</button>
   </div> 
+   
    </div>
 
   )
