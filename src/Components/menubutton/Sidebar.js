@@ -6,7 +6,7 @@ import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
-import Topheading from '../topheading/Topheading'
+
 
 const Nav = styled.div`
   background-color: red;
@@ -23,10 +23,11 @@ const NavIcon = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 `;
 
 const SidebarNav = styled.nav`
-  background: #15171c;
+  background:white;
   width: 250px;
   height: 100vh;
   display: flex;
@@ -44,12 +45,16 @@ const SidebarWrap = styled.div`
 
 const textHead = {
   fontSize : '20px',
-  color: 'white'
+  color: 'white',
+  textdecoration:'none'
 }
-const topHeader = {
-  marginLeft:'200px',
-  marginTop: '50px'
-}
+// const topHeader = {
+//   marginLeft:'800px',
+//   marginRight:'200px',
+//   marginTop: '50px',
+//   position: 'absolute',
+
+// }
 
 
 const Sidebar = () => {
@@ -65,10 +70,8 @@ const Sidebar = () => {
           <NavIcon>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
+          {/* <Topheading style={topHeader} /> */}
         </Nav>
-        <Topheading style={topHeader} />
-    
-     
         
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
@@ -87,3 +90,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
