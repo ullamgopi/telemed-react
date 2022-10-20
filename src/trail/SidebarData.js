@@ -1,30 +1,10 @@
-// import React from 'react'
-// import List from '@material-ui/core/List'
-// import ListItem from '@material-ui/core/ListItem'
-// import ListItemText from '@material-ui/core/ListItemText'
-// import './SideData.css'
+import React from 'react';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import * as IoIcons from 'react-icons/io';
+import * as RiIcons from 'react-icons/ri';
 
-
-// function SideData({ items }) {
-//   return (
-//     <div className="sideDtSideData">
-//       <List disablePadding dense>
-//         {items.map(({title , icon, ...rest }) => (
-//           <ListItem key={title} button {...rest}>
-//             <ListItemText>{icon}</ListItemText>
-//             <ListItemText className='text-title'>{title}</ListItemText>
-//           </ListItem>
-//         ))}
-//       </List>
-//     </div>
-//   )
-// }
-
-// export default SideData;
-
-
-
-const item = [
+ export const SidebarData = [
   {
     title: 'Back',
     path: '/back',
@@ -109,6 +89,4 @@ const item = [
     icon: <IoIcons.IoMdHelpCircle />
   }
 ];
-
-
 

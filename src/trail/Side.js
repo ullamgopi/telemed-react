@@ -118,8 +118,9 @@ const NavIcon = styled(Link)`
   align-items: center;
 `;
 const SidebarNav = styled.nav`
-  background: white;
+  background: black;
   width: 250px;
+  color:white;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -143,8 +144,8 @@ const textHead = {
 }
 const closeIcon = {
     color: 'red',
-    marginleft: '188px',
     position: 'absolute',
+    marginleft: '188px',
     margintop: '-47px',
     fontsize: '34px',
 }
@@ -167,9 +168,9 @@ function Side() {
           <SidebarWrap>
             {/* <NavIcon to='#'> */}
             <h2 style={textHead}>Menu Items</h2>
-              <AiIcons.AiOutlineClose onClick={showSidebar} style={closeIcon}/>
+              <AiIcons.AiOutlineClose onClick={showSidebar}  style={{marginLeft:'200px',marginTop:'-40px',position:'absolute'}}/>
             {/* </NavIcon> */}
-            <div class="sidebar">
+            <div className="sidebar">
                <SideData items={item} />
             </div>
           </SidebarWrap>
@@ -179,5 +180,10 @@ function Side() {
   );
 }
 
+
 export default Side;
+
+
+
+
 
