@@ -4,15 +4,11 @@ import * as AiIcons from 'react-icons/ai';
 import { IconContext } from 'react-icons/lib';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-//  import { SidebarData } from './SidebarData.js';
 
 
-//package for list
-import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
-import './SideData.css'
-import { SidebarData } from './SidebarData';
+
 
 
 
@@ -59,15 +55,12 @@ const textHead = {
 }
 
 
- export function Side() {
+ export function Side(props) {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
-const dataCamp = SidebarData
-console.log(dataCamp)
-  
-
+  console.log(props)
   return (
 
     <IconContext.Provider value={{ color: '#fff' }}>
@@ -80,13 +73,10 @@ console.log(dataCamp)
           <SidebarWrap>
             <h2 style={textHead}>Menu Items</h2>
               <AiIcons.AiOutlineClose onClick={showSidebar}  style={{marginLeft:'200px',marginTop:'-40px',position:'absolute'}}/>
-            {/* <div className="sidebar">
-               <SideData items={SidebarData} />  // sending has prop
-            </div> */}
-
-            {dataCamp.map(({icon,title})=>(<ListItem>
+            {props.Dataset.type.map(({icon,title})=>(<ListItem>
             <ListItemText>{icon}</ListItemText>
-            <ListItemText className='text-title'>{title}</ListItemText> 
+            <ListItemText className='text-title'>{title}</ListItemText>
+
         </ListItem>))}
     
           </SidebarWrap>
@@ -97,20 +87,10 @@ console.log(dataCamp)
 }
 
 
-export function SideData(props) {
-    console.log(props)
-  return (
-    <div className="sideDtSideData">
-      <List disablePadding dense>
-        {props.items.map(({icon,title})=>(<ListItem>
-            <ListItemText>{icon}</ListItemText>
-            <ListItemText className='text-title'>{title}</ListItemText>
-        </ListItem>))}
 
-      </List>
-    </div>
-  )
-}
+
+
+
 
 
 
