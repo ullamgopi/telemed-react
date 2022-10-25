@@ -4,22 +4,99 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
 import {Side} from '../trail/Dummy';
+import Menu from './Menu';
+
+
 
 
 function Data() {
 
-const Dataset = [
+ const Dataset = [
   {
     title: 'Back',
     path: '/back',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: 'State',
+        path: '/reports/state',
+      //   cName: 'sub-nav'
+      },
+      {
+        title: 'COVID-19',
+        path: '/reports/covid-19',
+      //   cName: 'sub-nav'
+      },
+      {
+        title: 'SWA',
+        path: '/reports/swa',
+      
+      },
+      {
+          title: 'Fedex',
+          path: '/reports/fedex',
+         
+        },
+        {
+          title: 'USPS',
+          path: '/reports/usps',
+          
+        },
+        {
+          title: 'FROI',
+          path: '/reports/froi',
+          
+        },
+        {
+          title: 'UPS',
+          path: '/reports/ups',
+     
+        }
+    ]
   },
   {
     title: 'Incomplete Visits',
     path: '/incompletevisits',
     icon: <IoIcons.IoIosPaper />,
+    subNav: [
+      {
+        title: 'State',
+        path: '/reports/state',
+      //   cName: 'sub-nav'
+      },
+      {
+        title: 'COVID-19',
+        path: '/reports/covid-19',
+      //   cName: 'sub-nav'
+      },
+      {
+        title: 'SWA',
+        path: '/reports/swa',
+      
+      },
+      {
+          title: 'Fedex',
+          path: '/reports/fedex',
+         
+        },
+        {
+          title: 'USPS',
+          path: '/reports/usps',
+          
+        },
+        {
+          title: 'FROI',
+          path: '/reports/froi',
+          
+        },
+        {
+          title: 'UPS',
+          path: '/reports/ups',
+     
+        }
+    ]
     
   },
   {
@@ -84,7 +161,44 @@ const Dataset = [
   {
     title: 'Company Protocol',
     path: '/companyprotocol',
-    icon: <IoIcons.IoMdHelpCircle />
+    icon: <IoIcons.IoMdHelpCircle />,
+    subNav: [
+      {
+        title: 'State',
+        path: '/reports/state',
+      //   cName: 'sub-nav'
+      },
+      {
+        title: 'COVID-19',
+        path: '/reports/covid-19',
+      //   cName: 'sub-nav'
+      },
+      {
+        title: 'SWA',
+        path: '/reports/swa',
+      
+      },
+      {
+          title: 'Fedex',
+          path: '/reports/fedex',
+         
+        },
+        {
+          title: 'USPS',
+          path: '/reports/usps',
+          
+        },
+        {
+          title: 'FROI',
+          path: '/reports/froi',
+          
+        },
+        {
+          title: 'UPS',
+          path: '/reports/ups',
+     
+        }
+    ]
   },
   {
     title: 'Sign Out',
@@ -94,8 +208,9 @@ const Dataset = [
 ];
   return (
     <div>
-      <Side Dataset= {<Dataset />} />
-    </div>
+      {/* <Side Dataset= {<Dataset />} /> */}
+      <Menu menuItems= {<Dataset />} />
+    </div> 
   )
 }
 
