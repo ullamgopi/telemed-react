@@ -1,7 +1,4 @@
 .text-container {
-    background-color: red;
-    text-align: center;
-    margin-top: -20px;
-    position: absolute;
-    margin-left: -89px;
+  text-align: center;
+  background-color: red;
   }

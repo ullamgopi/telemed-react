@@ -8,11 +8,9 @@ function LoginPage() {
     
   return (
     <div>
-
-    
+         <Topheading />
       <div className='back-container'></div>
-        <Topheading />
-
+     
         <div className='wrapper'>
         <img src={image}  className='imgsrc'/>
         <div className='subWrapper'>
