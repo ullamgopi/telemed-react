@@ -1,0 +1,38 @@
+.IconSearch {
+  
+    width: 45px;
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 121px;
+    margin-left: -9px;
+    height: 24px;
+    /* text-align: center; */
+    padding-left: 5px;    
+}
+
+input {
+    text-align: center;
+    margin-right: 200px;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+    /* margin-right: 200px; */
+  }
+  :-moz-placeholder {
+    text-align: center;
+    /* margin-right: 200px; */
+  } 
+   .searchContainer {
+    align-items: center;
+    /* text-align: left; */
+  }
+
+  .patientIcon{
+    width: 50%;
+    text-align: center;
+  }
+
+  .fieldcontainer {
+      width: 50%;
+      margin: auto;
+  }

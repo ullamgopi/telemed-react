@@ -1,16 +1,15 @@
 import React,{useState} from 'react'
-import SelectBasicExample from '../../Components/SelectBasicExample'
+import SelectBasicExample from '../../Components/Dropdown/SelectBasicExample';
 // import RBMenu from '../../Components/reactBootstrapMenu/RBMenu';
 import Form from 'react-bootstrap/Form';
 import './MainBoard.css'
 
 
-function MainBoard() {
-    // const [show ,setShow] = useState(false)
-    // const [data ,setData] = useState(false)
-
+function MainBoard(props) {
     const [sidebar, setSidebar] = useState(false);
     const [subnav, setSubnav] = useState(false);
+
+    console.log(props)
   
     const showSidebar = () => setSidebar(!sidebar);
     const showSubnav = () => setSubnav(!subnav);
@@ -29,7 +28,7 @@ function MainBoard() {
            type="radio"
            id="custom-switch"
            label="Create New Visit"
-           onClick={showSidebar}
+           onClick={showSidebar} 
            />
 
           <Form.Check 
@@ -47,20 +46,20 @@ function MainBoard() {
       {sidebar && <div>
         <div>
         <p>Visit Type:</p>
-        <SelectBasicExample />
+        <SelectBasicExample items={props}/>
       </div>
 
 
      <div>
         <p>Purpose of visit:</p>
-        <SelectBasicExample />
+        <SelectBasicExample items={props}/>
       </div> 
     </div>}
 
     {subnav && <div>
    
     <p>country:</p>
-    <SelectBasicExample />
+    <SelectBasicExample items={props}/>
 
     </div>}
  

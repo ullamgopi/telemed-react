@@ -1,0 +1,42 @@
+.totalContainer {
+    /* text-align: center; */
+    border: 2px solid black;
+    width:50%;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+ 
+
+}
+.barText {
+    text-align: center;
+    align-items: center;
+}
+
+.headerImage {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: -27px;
+
+}
+.searchCompany{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+}
+
+.inputPassword {
+    margin: auto;
+    text-align: center;
+}
+.headerImg {
+    text-align: center;
+}
+.headerLabel {
+    text-align: center;
+}
+.parentLabel {
+    text-align: center;
+}

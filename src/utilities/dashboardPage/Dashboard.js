@@ -5,7 +5,9 @@ import { RiPencilLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
 import { FaList, FaRegHeart } from "react-icons/fa";
 import RBMenu from '../../Components/reactBootstrapMenu/RBMenu';
-import SelectBasicExample from '../../Components/SelectBasicExample';
+// import SelectBasicExample from '../../Components/SelectBasicExample';
+import MainBoard from '../../pages/DashboardPage/MainBoard';
+import DocumentScreen from '../../pages/DocumentPage/DocumentScreen';
 
 
 class Dashboard extends React.Component {
@@ -19,6 +21,7 @@ class Dashboard extends React.Component {
             leftMenuIcons: [],
             subMenuNames: [],
             visitType: [],
+            uploadType: [],
         };
     }
     componentDidMount() {
@@ -30,15 +33,20 @@ class Dashboard extends React.Component {
             isSubmenus: [false, false, false, true, true],
             subMenuTitles: ["/VisitPage", "/VisitPage", "/VisitPage", "/VisitPage", "/VisitPage"],
             leftMenuIcons: [<FaList />, <FaRegHeart />, <RiPencilLine />, <BiCog />],
-            visitType: ['Select','corporate','Worker Comp','MentalHealth']
+            visitType: ['Select','corporate','Worker Comp','MentalHealth'],
+            uploadType: ['Select','pdf','ppt','doc'],
         });
 
     };
     render() {
         return (
             <div>
+                     {/* <DocumentScreen titles={this.state.DocumentType}/> */}
                    <RBMenu menuHeader="Menu Items" titles={this.state.menuTitles} isSubmenu={this.state.isSubmenus} />
-                   <SelectBasicExample  titles={this.state.visitType} />
+                   {/* <MainBoard  titles={this.state.visitType} /> */}
+                   {/* <DocumentScreen  titles={this.state.uploadType} /> */}
+                  
+                 
             </div>
         )
     }
