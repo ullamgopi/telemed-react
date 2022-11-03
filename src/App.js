@@ -2,14 +2,18 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Data from './trail/Data';
-import Dashboard from '../src/utilities/dashboardPage/Dashboard'
-import MainBoard from './pages/DashboardPage/MainBoard';
-import LoginPage from './pages/loginPage/LoginPage';
-// import SearchBar from './Components/Search/SearchBar';
- import CompleteScreen from './pages/CompletedPages/CompleteScreen';
-import DocumentScreen from './pages/DocumentPage/DocumentScreen';
-import Protocol from './Components/CompanyProtocol/Protocol';
 
+import Dashboard from './pages/dashboardPage/Dashboard';
+import LoginPage from './pages/loginPage/LoginPage';
+import IncompleteScreen from './pages/incompleteVisitPage/IncompleteVisit';
+// import SearchBar from './Components/Search/SearchBar';
+ import CompleteVisit from './pages/completeVisitPages/CompleteVisit';
+import DocumentScreen from './pages/documentPage/DocumentScreen';
+import Protocol from './Components/CompanyProtocol/Protocol';
+import Text from './Components/scrollTop/Text';
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DashboardData from './utilities/dashboardPage/DashboardData';
 
 
 
@@ -23,8 +27,20 @@ function App() {
       {/* <SearchBar /> */}
       {/* <CompleteScreen /> */}
       {/* <DocumentScreen /> */}
-      <Protocol />
-
+      {/* <Text /> */}
+      {/* <Router>
+      <DashboardData /> */}
+      {/* <Routes>
+        <Route path="/" component={Dashboard} />
+        <Route path='/DocumentScreen'  component={DocumentScreen}/>
+        <Route path='/CompleteVisit'  component={CompleteVisit}/>
+        <Route path='/IncompleteScreen'  component={IncompleteScreen}/>
+        <Route path='/Protocol'  component={Protocol}/> */}
+        {/* <Route path='/DocumentScreen'  component={<DocumentScreen />}/>
+        {/* <Route path='/DocumentScreen'  component={<DocumentScreen />}/> */}
+        {/* </Routes>
+      </Router>  */}
+  
     </div>
   );
 }

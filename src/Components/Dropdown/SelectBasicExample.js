@@ -10,9 +10,9 @@ function SelectBasicExample(items) {
             <option>{element}</option>  
        ))}  */}
 
-       {/* {items.items.titles.map((element)=>(
+       {items.items.titles.map((element)=>(
             <option>{element}</option>  
-       ))}  */}
+       ))} 
 
 
     

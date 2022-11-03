@@ -1,0 +1,97 @@
+// document screen text
+
+ {/* <Form>
+         <Form.Label htmlFor="inputPassword5">Company  Search:</Form.Label>
+         <SearchBar placeholder="Search Company"/>
+
+         <Form.Label htmlFor="inputPassword5" className='branchName'>Branch:</Form.Label>
+         <SelectBasicExample  items={props} className='border'/> 
+
+         <Button variant="danger" className='button-danger'>Danger</Button>
+         
+       </Form> */}
+
+       {/* <SelectTextFields items={props} /> */}
+
+
+             
+               
+                 {/* <SearchBar placeholder="Search Company" />
+                <SelectTextFields  items={props} /> 
+                <Button /> */}
+
+
+
+                 {/* <Form className='rounded p-4 p-sm-3'>
+          <Form.Group className='mb-3' controlId='formBasicEmail'>
+            <Form.Label>Email addeed</Form.Label>
+            <Form.Control type='email' placeholder='enter email'/>
+            {/* <Form.Label htmlFor="inputPassword5">Patient Search:</Form.Label>
+                <SearchBar placeholder="Search Company" />  <br /> */}
+          {/* </Form.Group> */}
+
+          {/* <Form.Group className='mb-3' controlId='formBasicEmail'>
+            <Form.Label>Email addeed</Form.Label>
+            <Form.Control type='email' placeholder='enter email'/>
+          </Form.Group>
+
+
+         </Form> */} 
+
+
+
+         ///textfeild
+
+
+          // return (
+  //   <Box
+  //     component="form"
+  //     sx={{
+  //       '& .MuiTextField-root': { m: 1, width: '195ch' },
+  //     }}
+  //     noValidate
+  //     autoComplete="off"
+  //   >
+  //     <div>
+  //       {/* <TextField
+  //         id="outlined-select-currency"
+  //         select
+  //         label="Branch"
+  //         value={currency}
+  //         onChange={handleChange}
+        
+  //       >
+  //         {props.items.titles.map((element) => (
+  //           <option key={element.value} value={element.value}>
+  //             {element}
+  //           </option>
+  //         ))}
+  //       </TextField>  */}
+  
+  //       <TextField
+  //         id="outlined-select-currency"
+  //         select
+  //         label="Select"
+  //         value={currency}
+  //         onChange={handleChange}
+  //         helperText="Please select your currency"
+  //       >
+  //         {/* {currencies.map((option) => (
+  //           <MenuItem key={option.value} value={option.value}>
+  //             {option.label}
+  //           </MenuItem>
+  //         ))} */}
+  //         {props.items.titles.map((value) => (
+  //           <option key={value} value={value}>
+  //             {value}
+  //           </option>
+  //         ))}
+  //       </TextField>  
+       
+  
+  //     </div>   
+
+  //    </Box>
+  // )
+  //         }
+          

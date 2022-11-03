@@ -2,7 +2,7 @@ import React from 'react'
 import Form from 'react-bootstrap/Form';
 import SearchBar from '../../Components/Search/SearchBar'
 
-function IncompleteScreen() {
+function IncompleteVisit() {
   return (
     <div>
       <Form>
@@ -13,6 +13,6 @@ function IncompleteScreen() {
   )
 }
 
-export default IncompleteScreen
+export default IncompleteVisit
 
 

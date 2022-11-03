@@ -2,7 +2,7 @@ import React from 'react'
 import Form from 'react-bootstrap/Form';
 import SearchBar from '../../Components/Search/SearchBar'
 
-function CompleteScreen() {
+function CompleteVisit() {
   return (
     <div>
        <Form>
@@ -14,4 +14,4 @@ function CompleteScreen() {
   )
 }
 
-export default CompleteScreen
+export default CompleteVisit

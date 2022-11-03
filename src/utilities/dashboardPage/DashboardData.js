@@ -6,11 +6,17 @@ import { BiCog } from "react-icons/bi";
 import { FaList, FaRegHeart } from "react-icons/fa";
 import RBMenu from '../../Components/reactBootstrapMenu/RBMenu';
 // import SelectBasicExample from '../../Components/SelectBasicExample';
-import MainBoard from '../../pages/DashboardPage/MainBoard';
-import DocumentScreen from '../../pages/DocumentPage/DocumentScreen';
+import Dashboard from '../../pages/dashboardPage/Dashboard';
+import DocumentScreen from '../../pages/documentPage/DocumentScreen';
+import Protocol from '../../Components/CompanyProtocol/Protocol';
+// import { Router,Route } from 'react-router-dom';
+import CompleteVisit from '../../pages/completeVisitPages/CompleteVisit';
+import IncompleteScreen from '../../pages/incompleteVisitPage/IncompleteVisit';
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
-class Dashboard extends React.Component {
+class DashboardData extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -35,6 +41,7 @@ class Dashboard extends React.Component {
             leftMenuIcons: [<FaList />, <FaRegHeart />, <RiPencilLine />, <BiCog />],
             visitType: ['Select','corporate','Worker Comp','MentalHealth'],
             uploadType: ['Select','pdf','ppt','doc'],
+            purposeType: ['Injury-Office Visit','Injury-First Aid','Injury-MD Triage','Drug/Alcohol test','Physical Therapy','COVID_19 Screening'],
         });
 
     };
@@ -43,12 +50,25 @@ class Dashboard extends React.Component {
             <div>
                      {/* <DocumentScreen titles={this.state.DocumentType}/> */}
                    <RBMenu menuHeader="Menu Items" titles={this.state.menuTitles} isSubmenu={this.state.isSubmenus} />
-                   {/* <MainBoard  titles={this.state.visitType} /> */}
+                   {/* <Dashboard  titles={this.state.visitType}  subValues={this.state.purposeType} /> */}
                    {/* <DocumentScreen  titles={this.state.uploadType} /> */}
-                  
-                 
+
+
+                   <Router>
+      <DashboardData />
+      <Routes>
+        <Route path="/" component={Dashboard} />
+        <Route path='/DocumentScreen'  component={DocumentScreen}/>
+        <Route path='/CompleteVisit'  component={CompleteVisit}/>
+        <Route path='/IncompleteScreen'  component={IncompleteScreen}/>
+        <Route path='/Protocol'  component={Protocol}/>
+        {/* <Route path='/DocumentScreen'  component={<DocumentScreen />}/>
+        <Route path='/DocumentScreen'  component={<DocumentScreen />}/> */}
+        </Routes>
+      </Router>
+            
             </div>
         )
     }
 }
-export default Dashboard;
+export default DashboardData;
