@@ -14,13 +14,14 @@ import Text from './Components/scrollTop/Text';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DashboardData from './utilities/dashboardPage/DashboardData';
+import Searchcom from './Components/search11/Searchcom';
 
 
 
 function App() {
   return (
     <div className="sidebar">
-      <Dashboard />
+      <DashboardData />
       {/* <Data /> */}
       {/* <MainBoard /> */}
       {/* <LoginPage /> */}
@@ -28,17 +29,17 @@ function App() {
       {/* <CompleteScreen /> */}
       {/* <DocumentScreen /> */}
       {/* <Text /> */}
-      {/* <Router>
-      <DashboardData /> */}
-      {/* <Routes>
+
+      {/* <Searchcom /> */}
+       {/* <Router>
+      <DashboardData /> 
+      <Routes>
         <Route path="/" component={Dashboard} />
         <Route path='/DocumentScreen'  component={DocumentScreen}/>
         <Route path='/CompleteVisit'  component={CompleteVisit}/>
         <Route path='/IncompleteScreen'  component={IncompleteScreen}/>
-        <Route path='/Protocol'  component={Protocol}/> */}
-        {/* <Route path='/DocumentScreen'  component={<DocumentScreen />}/>
-        {/* <Route path='/DocumentScreen'  component={<DocumentScreen />}/> */}
-        {/* </Routes>
+        <Route path='/Protocol'  component={Protocol}/> 
+         </Routes>
       </Router>  */}
   
     </div>

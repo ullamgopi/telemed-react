@@ -12,6 +12,8 @@ import Protocol from '../../Components/CompanyProtocol/Protocol';
 // import { Router,Route } from 'react-router-dom';
 import CompleteVisit from '../../pages/completeVisitPages/CompleteVisit';
 import IncompleteScreen from '../../pages/incompleteVisitPage/IncompleteVisit';
+import Searchcom from '../../Components/search11/Searchcom';
+
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -28,6 +30,7 @@ class DashboardData extends React.Component {
             subMenuNames: [],
             visitType: [],
             uploadType: [],
+            searchType: [],
         };
     }
     componentDidMount() {
@@ -42,6 +45,7 @@ class DashboardData extends React.Component {
             visitType: ['Select','corporate','Worker Comp','MentalHealth'],
             uploadType: ['Select','pdf','ppt','doc'],
             purposeType: ['Injury-Office Visit','Injury-First Aid','Injury-MD Triage','Drug/Alcohol test','Physical Therapy','COVID_19 Screening'],
+            searchType: ['Mavo','Apollo','Care','Stanley','Morgan','Tata'],
         });
 
     };
@@ -49,11 +53,13 @@ class DashboardData extends React.Component {
         return (
             <div>
                      {/* <DocumentScreen titles={this.state.DocumentType}/> */}
-                   <RBMenu menuHeader="Menu Items" titles={this.state.menuTitles} isSubmenu={this.state.isSubmenus} />
-                   {/* <Dashboard  titles={this.state.visitType}  subValues={this.state.purposeType} /> */}
+                   {/* <RBMenu menuHeader="Menu Items" titles={this.state.menuTitles} isSubmenu={this.state.isSubmenus} />
+                   <Dashboard  titles={this.state.visitType}  subValues={this.state.purposeType} /> */}
                    {/* <DocumentScreen  titles={this.state.uploadType} /> */}
 
+                    <Searchcom  titles={this.state.searchType} />
 
+{/* 
                    <Router>
       <DashboardData />
       <Routes>
@@ -64,8 +70,8 @@ class DashboardData extends React.Component {
         <Route path='/Protocol'  component={Protocol}/>
         {/* <Route path='/DocumentScreen'  component={<DocumentScreen />}/>
         <Route path='/DocumentScreen'  component={<DocumentScreen />}/> */}
-        </Routes>
-      </Router>
+        {/* </Routes> */}
+      {/* </Router> */} 
             
             </div>
         )

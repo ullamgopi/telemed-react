@@ -1,8 +1,32 @@
 .total {
-    position: absolute;
+    /* position: absolute; */
     margin-top: 70px;
-    padding: 10px
+    padding: 10px;
+    text-align: center;
 }
 .formType {
     width:300px
+}
+/* Form.Check, label {
+    margin: auto;
+    margin-right: -185px;
+    margin-top: 1px;
+    position: absolute;
+    margin-left: -193px;
+}
+Form.Check, label {
+    margin: auto;
+    margin-right: -185px;
+    margin-top: -1px;
+    position: absolute;
+    margin-left: -193px;
+} */
+
+.form-check-input[type=radio] {
+    position: absolute;
+    /* border-radius: 50%;
+    margin-left: 1427px; */
+}
+.radiobtn1 {
+    margin-top: 50px;
 }

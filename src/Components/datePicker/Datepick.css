@@ -1,0 +1,9 @@
+.pickerDate {
+    text-align: center;
+}
+
+input {
+    height: 40px;
+    width: 240px;
+    font-size: 32px;
+}
